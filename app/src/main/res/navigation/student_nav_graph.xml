@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav_graph"
+    app:startDestination="@id/studentDetailsFragment">
+
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.reeta.navigationgraphproject.StudentDetailsFragment"
+        android:label="fragment_student_details"
+        tools:layout="@layout/fragment_student_details" >
+        <action
+            android:id="@+id/action_studentDetailsFragment_to_studentProfessionsFragment"
+            app:destination="@id/studentProfessionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentProfessionsFragment"
+        android:name="com.reeta.navigationgraphproject.StudentProfessionsFragment"
+        android:label="fragment_student_professions_"
+        tools:layout="@layout/fragment_student_professions_" >
+    </fragment>
+    <activity
+        android:id="@+id/previoActivity"
+        android:name="com.reeta.navigationgraphproject.PrevioActivity"
+        android:label="activity_previo"
+        tools:layout="@layout/activity_previo" />
+</navigation>
